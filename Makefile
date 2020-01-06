@@ -30,7 +30,7 @@ targetC: targetD
 targetD:
 	@echo targetD
 
-BENCH_DATASET_HDF5_DIR = bench
+BENCH_DATASET_HDF5_DIR = hack/benchmark/assets
 
 mkdir: $(BENCH_DATASET_HDF5_DIR)
 	@echo success
