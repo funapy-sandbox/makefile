@@ -8,7 +8,7 @@ files = hoge.txt foo.txt \
 		hoge.txt
 
 echo/files:
-	@echo ${files}
+	@echo $(files)
 
 hello.txt:
 	echo Hello > hello.txt
