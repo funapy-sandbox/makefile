@@ -29,3 +29,14 @@ targetC: targetD
 
 targetD:
 	@echo targetD
+
+BENCH_DATASET_HDF5_DIR = bench
+
+mkdir: $(BENCH_DATASET_HDF5_DIR)
+	@echo success
+
+$(BENCH_DATASET_HDF5_DIR):
+	@echo create directory: $@
+	$(call mkdir, $@)
+	@echo clean directory: $@/*
+	$(call rm, -rf, $@/*)
